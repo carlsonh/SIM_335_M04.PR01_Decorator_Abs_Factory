@@ -37,7 +37,7 @@ public class AMFFactory : AbstractCoffeeFactory
     }
     public override ICoffee Create()
     {
-        if (coffeeToDeco != null)
+        if (coffeeToDeco == null)
         {
             coffeeToDeco = _factory.Create(_requirements, coffeeToDeco);
         }

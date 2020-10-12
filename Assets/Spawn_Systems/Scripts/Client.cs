@@ -55,6 +55,7 @@ public class Client : MonoBehaviour
 
         ICoffee vhc = GetAMF(amfReqs, myCoffee);
 
+        Debug.Log(vhc);
         //Update UI
         spawnedVehicle.text = "Spawned a: " + vhc.GetDescription();
         coffeeCost.text = "Cost: $" + vhc.GetCost();
